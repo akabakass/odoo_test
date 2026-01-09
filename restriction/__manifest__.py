@@ -1,5 +1,5 @@
 {
-        "name": "hello",
+        "name": "restrictions",
         "version": "0.1",
         "depends": ['base'],
         "data": [
