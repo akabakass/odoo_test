@@ -8,7 +8,7 @@ class ShipRestrictionTag(models.Model):
     color = fields.Integer(string="Couleur")
 
 class ShipRestrictionRule(models.Model):
-    _name = "ship.restriction.rule"
+    _inherit = "delivery.carrier"
     _description = "the lists of restictions for the shipper"
 
-    tags_ids = fields.Many2many('ship.restriction.tag', string="Restrictions")
+    restriction_tags_ids = fields.Many2many('ship.restriction.tag', string="Restrictions")

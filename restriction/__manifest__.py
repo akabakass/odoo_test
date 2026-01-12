@@ -1,7 +1,7 @@
 {
         "name": "restrictions",
         "version": "0.1",
-        "depends": ['base'],
+        "depends": ['base', 'stock', 'delivery'],
         "data": [
             "security/ir.model.access.csv",
             "views/restriction_view.xml"
