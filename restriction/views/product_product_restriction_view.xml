@@ -1,0 +1,16 @@
+<odoo>
+  <record id="view_delivery_product_product_restriction" model="ir.ui.view">
+    <field name="name">product.product.delivery.restriction</field>
+    <field name="model">product.product</field>
+    <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//group[@name='sales']" position="after">
+        <group string="Restrictions d'expédition'">
+          <field name="restriction_tags_ids_template" invisible="1"/>
+          <field name="restriction_tags_ids" widget="many2many_tags" options="{'no_create': True}" domain="[('id', 'not in', restriction_tags_ids_template)]"/>
+          <field name="all_restrictions_tags_id" widget="many2many_tags" readonly="1"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>
