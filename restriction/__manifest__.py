@@ -1,7 +1,7 @@
 {
         "name": "restrictions",
         "version": "0.1",
-        "depends": ['base', 'stock', 'delivery', 'product', 'stock'],
+        "depends": ['base', 'website_sale', 'delivery', 'sale', 'product', 'stock'],
         "data": [
             "security/ir.model.access.csv",
             "views/ship_restriction_view.xml",
